@@ -1,0 +1,40 @@
+html{
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+.container{
+    max-width: 1220px;
+    padding: 25px 10px;
+    margin: 0 auto;
+}
+
+.header{
+    height: 200px;
+    background-color: #0db06e;
+}
+
+.main{
+    background-color: #ccc;
+}
+
+.footer{
+    height: 200px;
+    background-color: #000;
+}
