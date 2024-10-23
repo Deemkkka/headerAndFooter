@@ -2,6 +2,11 @@ html{
     box-sizing: border-box;
 }
 
+html,
+body{
+    height: 100%;
+}
+
 *,
 *::before,
 *::after{
@@ -15,6 +20,7 @@ body{
 }
 
 .wrapper{
+    min-height: 100%; /*чтобы это работало, нужно задать высоту родителю (html, body)*/
     display: flex;
     flex-direction: column;
 }
@@ -32,6 +38,7 @@ body{
 
 .main{
     background-color: #ccc;
+    flex-grow: 1;
 }
 
 .footer{
